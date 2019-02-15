@@ -49,6 +49,12 @@ res.render('about.hbs', {
   });
 });
 
+app.get('/port-folio', (req, res) => {
+    res.render('port-folio.hbs', {
+        pageName : 'Port folio page'
+    });
+})
+
 app.get('/bad', (req, res) => {
  res.send({
     error : 'Error creating request'
